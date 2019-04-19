@@ -46,7 +46,7 @@ router.get('/api/problem', isAuthenticated.loggedIn, isAuthenticated.acceptedAgr
 });
 
 router.get('/api/problem/:problemId', isAuthenticated.loggedIn, isAuthenticated.acceptedAgreement, (req, res) => {
-    db.Problem.find({ where: { id: req.params.problemId }, include: [db.User]}).then(function (dbProblem) {
+    db.Problem.findOne({ where: { id: req.params.problemId }, include: [db.User]}).then(function (dbProblem) {
         console.log("problem", dbProblem);
         res.json(dbProblem.ViewModel());
     }, function (err) {
