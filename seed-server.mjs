@@ -25,6 +25,9 @@ db.sequelize.sync({force: true}).then(() => {
                 userId: problem.UserId
             }));
         });
-        Promise.all(problemPromises).then(() => console.log("finished!"));
+        Promise.all(problemPromises).then(() => {
+            console.log("finished!")
+            db.sequelize.close();
+        });
     })
 });
