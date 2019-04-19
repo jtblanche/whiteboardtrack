@@ -9,10 +9,10 @@
         "watch": "nodemon --experimental-modules server.mjs",
         "install-login": "cd blocked; yarn;",
         "install-home": "cd home; yarn;",
-        "install": "yarn install-login; yarn install-home;",
+        "install": "yarn run install-login; yarn run install-home;",
         "build-login": "cd blocked; yarn build; mv build static; mkdir build; mv static build/public; mv build/public/index.html build/index.html;",
         "build-home": "cd home; yarn build; mv build static; mkdir build; mv static build/public; mv build/public/index.html build/index.html;",
-        "build": "yarn build-login; yarn build-home;",
+        "build": "yarn run build-login; yarn run build-home;",
         "heroku-postbuild": "yarn run build"
     },
     "keywords": [],
