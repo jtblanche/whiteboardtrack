@@ -128,7 +128,7 @@ class Home extends Component {
 							</Typography>
 							<div className={classes.heroButtons}>
 								<Grid container spacing={16} justify="center">
-									<Grid item>
+									{/* <Grid item>
 										<a
 											className={classes.link}
 											href={`${process.env.PUBLIC_URL}/random`}
@@ -147,7 +147,7 @@ class Home extends Component {
 												Review Answered and Created Problems
 											</Button>
 										</Link>
-									</Grid>
+									</Grid> */}
 									<Grid item>
 										<Link
 											className={classes.link}
