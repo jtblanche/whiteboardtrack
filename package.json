@@ -4,10 +4,11 @@
     "description": "",
     "main": "server.js",
     "engines": {
-      "node": "11.13.0",
-      "yarn": "0.24.4"
+      "node": "^11.13.0",
+      "yarn": "^1.15.2"
     },
     "scripts": {
+        "seed": "node --experimental-modules seed-server.mjs",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node --experimental-modules server.mjs",
         "watch": "nodemon --experimental-modules server.mjs",
