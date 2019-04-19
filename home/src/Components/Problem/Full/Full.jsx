@@ -55,6 +55,9 @@ class RecipeReviewCard extends React.Component {
     componentDidUpdate = () => {
         Prism.highlightAll();
     };
+    componentDidMount = () => {
+        Prism.highlightAll();
+    };
 
 	render() {
         const { classes, name, author, avatarUrl, imageUrl, description, hint, short } = this.props;
