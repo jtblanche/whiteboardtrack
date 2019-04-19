@@ -32,7 +32,7 @@ app.use(apiRoutes);
 app.use(htmlRoutes);
 
 db.sequelize.sync({
-    force: true
+    force: false
 }).then(() =>
     app.listen(PORT, () =>
         console.log('==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.', PORT, PORT)
