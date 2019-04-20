@@ -27,7 +27,7 @@ CREATE DATABASE board_tracker;
 yarn
 ```
 
-* from the root folder build site to run:
+* from the root folder build site to run, **sometimes you need to run this twice**:
 ```
 yarn build
 ```
